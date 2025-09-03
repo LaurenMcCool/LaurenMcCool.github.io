@@ -3,21 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lauren McCool's Teacher Portfolio</title>
+    <title>Lauren McCool's Teacher Portfolio - About</title>
+    <link rel="stylesheet" href="starter.css">
 </head>
+
 <body>
-    <h1 style="color:rgb(22, 113, 45)">About Me</h1>
-    <i>Who am I?</h2>
-    <img src="Images/Graphics2025-08-07 at 2.32.49 pm.png" alt="">
-    <i>Hi!</i>
-    <p4> My name is Lauren McCool. I am a third year Bachelor of Education (Secondary) / Bachelor of Arts (Design Innovation and Technology) student at ACU. Currently I am training to become a high school TAS (Technology and Applied Studies) teacher. My subject specialisations are Textiles with a minor in Industrial Technologies, focusing on both timber and metalwork. I am passionate about design education and committed to fostering creativity, problem-solving, and hands-on skills in the next generation of learners.
-My teaching philosophy centres around creating an inclusive and engaging classroom environment where students feel empowered to explore, take risks, and express their individuality through design. I aim to combine practical skills with design thinking to encourage critical reflection and innovation, preparing students for both industry pathways and lifelong learning.
-</h3>
-    <img src="Images/MugShot.jpg" alt="">
-    <h1 style="color:rgb(15, 85, 38)">My Teaching Disciplines</h1>
-    <img src="Images/Teaching Disciplines.png" alt="">
-    ><a href="">https://educationstandards.nsw.edu.au/wps/portal/nesa/home</a>
-
-
+    <header> 
+    <!--My Heading for this Page-->
+    <h1>About Me</h1>
+    </header>
+    <!--Navagation Menu for my website-->
+    <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a class="active" href="about.html">About Me</a></li>
+    <li><a href="teaching.html">Teaching Practice</a></li>
+    <li><a href="projects.html">Project Showcase</a></li>
+    <li><a href="worksamples.html">Samples of Work</a></li>
+    <li><a href="contact.html">Contact Me</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="resume.html">Resume</a></li>
+  </ul>
+</nav>
+<!--This section of my page has the main content, in line with semantic HTML-->
+<main>
+    <!--This section introduced who I am-->
+    <section class="section">
+        <article class="profile">
+            <div class="profile-text">
+                <h2><i> Who am I?</i></h2>
+                <p><i>Hi!</i></p>
+                <p>My name is <strong>Lauren McCool</strong>. I am a third year Bachelor of Education (Secondary) / Bachelor of Arts (Design Innovation and Technology) student at <a href="https://www.acu.edu.au" target="_blank">ACU.</a></p>
+                <p>My subject specialisations are Textiles with a minor in Industrial Technologies, focusing on both timber and metalwork. I am passionate about design education and committed to fostering creativity, problem-solving, and hands-on skills in the next generation of learners.</p>
+            </div>
+            <div class="profile-photo">
+                <img src="images/RoundedMe.png" alt="profile photo of Lauren McCool - circle shape">
+            </div>
+           </article>
+           <p>My teaching philosophy centres around creating an inclusive and engaging classroom environment where students feel empowered to explore, take risks, and express their individuality through design. I aim to combine practical skills with design thinking to encourage critical reflection and innovation, preparing students for both industry pathways and lifelong learning.</p>
+    </section>
+    <!--This section identifies my teaching disciplines-->
+    <section class="section">
+        <h2>My Teaching Disciplines</h2>
+        <p>My degree will allow me to teach many different TAS disciplines under <a href="https://educationstandards.nsw.edu.au/wps/portal/nesa/home" target="_blank">NSW NSW Education Standards Authority (NESA).</a> See below a breakdown of my traching disciplines.</p>
+        <img src="Images/TeachingDisciplines.png" alt="Inforgraphic showing all my main teaching areas and disciplines; Textiles Technology, Industrial Timber, Metal, Food Technology, Teach Mandatory." width="400px">
+    </section>
+    <section class="section">
+        <img src="Images/AnimationOfDisciplines.png" width="600" height="375">
+    </section>
+    <section class="section">
+        <h4>Practicum Placement Overview</h4>
+        <table>
+            <thread>
+                <tr>
+                    <th>School</th>
+                    <th>Subjects Taught</th>
+                    <th>Year Level</th>
+                    <th>Term</th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>Engadine High School</td>
+                    <td>Stage 4 Tech Mandatory. Stage 5 & 6 Textiles Technology</td>
+                    <td>Year 7, 8, 9,10 & 11</td>
+                    <td>Term 2, 2024</td>
+                </tr>
+                <tr>
+                    <td>St Ursula's Catholic College, </td>
+                    <td>Stage 4 Tech Mandatory, Stage 5 Textiles Technology</td>
+                    <td>Year 7, 8 & 10</td>
+                    <td>Term 4, 2024</td>
+                </tr>
+                <tr>
+                    <td>Lucas Heights Community School</td>
+                    <td>Stage 4 Tech Mandatory, Stage 5 Food Technology, Industrial Timber, Textiles Technology. Stage 6 Hospitality</td>
+                    <td>Year 7, 9, 10 & 12</td>
+                    <td>Term 2 & 3, 2025</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+<!--This is the footer section for my page, in line with Semantic HTML-->
+<footer> 
+    <div class="container">
+        <p> &copy; 2025 Lauren McCool. All right reserved</p>
+        <p>Australian Catholic University</p>
+    </div>
+</footer>
 </body>
 </html>
