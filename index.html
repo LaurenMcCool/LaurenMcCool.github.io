@@ -1,9 +1,11 @@
 <!DOCTYPE HTML>
 <!--
-	Dimension by HTML5 UP
+	TEMPLATE: Dimension by HTML5 UP
 	html5up.net | @ajlkn
+	Source: https://html5up.net
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
 <html>
 	<head>
 		<title>Dimension by HTML5 UP</title>
@@ -14,10 +16,23 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
+		<!------------ Welcome Popup ----------------->
+		<!--Linked to JavaScript - popup.js - which allows users to subscribe to a monthly email chain with teaching resources.-->
+		<div id="welcomePopup" class="popup">
+			<div class="popup-content">
+				<button id="closePopup" class="close-btn">&times;</button>
+				<h3>WELCOME TO MY WEBSITE</h3>
+				<p>To hear more from me please subscribe to my blog for monthly updates and new teaching resources.</p>
+				<button id="subscribeBtn" class="button primary">Subscribe</button>
+			</div>
+		</div>
+
+
+		<!----------- Wrapper -------------->
 			<div id="wrapper">
 
-				<!-- Header -->
+				<!---------- Header -------------->
+				<!--Content seen on inital section of the website including the menu bar-->
 					<header id="header">
 						<div class="logo">
 							<span class="icon fa-gem"></span>
@@ -43,7 +58,8 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- About Me -->
+						<!--------------- About Me ----------------->
+						<!--Content seen in the about section on the nav bar. Conent describing who I am, my teaching history, and my resume for download-->
 							<article id="about">
 								<h2 class="major">ABOUT ME</h2>
 								<span class="image main"><img src="images/greenery_about_me.png" alt="Aesthetic photo of greenery" /></span>
@@ -69,6 +85,7 @@
 										<li>Currently working for a local Real Estate office in Property Management gaining problem solving skiils</li>
         							</ul>
 								</section>
+
 								<h3>PROFESSIONAL JOURNEY</h3>
 								<!-- My ordered list that represents key milestones in my teaching professional experience-->
      							<section class="section">
@@ -83,12 +100,16 @@
                 							Studying at Australian Catholic University working towards a Bachelor in Education (Secondary)/Bachelor of Arts (Design, Innovation and Technologies) with predictions to graduate 2026</li>
         							</ol>
      							</section>
+
+								<!--A button which will take users to the portfolio section of the website so they are able to see my teaching disciplines and my work.-->
 								<section class="Section">
 									<h3>TEACHING DISCIPLINES</h3>
 									<div class="cta">
 										<h2><a class="button" href="#portfolio">View My Teaching Disciplines Here</a></h2>
 									</div>
 								</section>
+
+								<!-- Orders table which identifies my teaching history and placement overview-->
 								<h3>PRACTICUM PLACEMENT OVERVIEW</h3>
 								<section class="section">     
         							<table>
@@ -122,6 +143,8 @@
 										</tbody>
 									</table>
 								</section>
+
+								<!--Button allowing users to click and download my resume-->
 								<section class="Section">
 									<h2>DOWNLOAD MY RESUME</h2>
 									<div class="cta">
@@ -131,14 +154,16 @@
 							</article>
 
 
-						<!-- philosophy -->
+						<!----------- philosophy ------------>
+						<!--Section of website from the philosophy nav where users are able to understand my passion as an educator and my philosophy as a teacher.-->
 							<article id="philosophy">
 								<h2 class="major">PHILOSOPHY</h2>
-								<span class="image main"><img src="images/greenery_philosophy.png" alt="Aesthetic photo of greenery" /></span>
+								<span class="image main"><img src="images/philosophy_.png" alt="Aesthetic photo of green fibres" /></span>
 								
-								<!--div 1: Looking at TAS subjects practical application and importance-->
+								<!--div 1: Looking at how the practical application in TAS subjects are importance. My ideas on creating with imagery-->
 								<h3>THE HUMAN NEED TO CREATE</h3>
 								<div class="create-content">
+									<!--Div allowing image and text the be next to eachother-->
 									<div class="create-text">
 										<p>At the heart of every human there is the desire to create, to make, build and design. This instinct drives curiosity and innovation and are the foundations of craftsmanship, problem solving, and innovation. TAS subjects provide one of the richest outlets for this creativity and help develop qualities that are essential to our future industries and communities.</p>
 									</div>
@@ -150,6 +175,7 @@
 								<!--Div 2: Looking at teaching and learning and the importance of education-->
 								<h3>THE ART OF LEARNING</h3>
 								<div class="learning-content">
+									<!--Div allowing image and text the be next to eachother-->
 									<div class="learning-image">
 										<img src="images/aesthetic_study.jpeg" alt="Aesthetic image of someone who is studying.">
 									</div>
@@ -164,6 +190,7 @@
 								<!--Div 3: Looking at the importance of creating a positive learning evironment and how i will create it-->
 								<h3>CREATING A POSITIVE LEARNING ENVIRONMENT</h3>
 								<div class="environment-content">
+									<!--Div allowing image and text the be next to eachother-->
 									<div class="environment-text">
 										<p>A positive classroom is the foundation for meaningful learning. I want my classroom to be a space where students feel safe, supported, and inspired to grow.</p>
 										<p>When students feel comfortable, they are more willing to take risks, collaborate, and persist through challenges. I believe that learning happens best when students feel seen and respected when they know their voice matters.</p>
@@ -173,48 +200,63 @@
 									</div>
 								</div>
 								
-
-									<h3>QUOTE GENERATOR</h3>
+								<!--HTML code to link JavaScript quote generation from quote.js -->
+								<h3>QUOTE GENERATOR</h3>
 								<p>Lets have some <strong>fun!</strong> Click on the below button to generate your own personal inspirational teaching quote</p>
-								<h2> GENERATE QUOTE</h2>
+								<!--button where when clicked will generate an inspirational quote from a bank of quotes--> 
+								<div class="quote-box">
+									<button onclick="generateQuote()" class="button primary">Generate a Quote</button>
+									<p id="quoteDisplay" style="margin-top: 1.5em; font-style: italic;"></p>
+								</div>
 							</article>
 
-						<!-- Portfolio -->
+						<!------------- Portfolio ---------------->
+						<!--Section of code lined the the nav- portfolio section of the website. This is the page users are directed to if they click on the 'view my teaching disciplines' in the a'bout' page. Users can also get here from clicking on the 'portfolio' button in the nav bar.-->
 							<article id="portfolio">
 								<h2 class="major">PORTFOLIO</h2>
 								<span class="image main"><img src="images/greenery_philosophy.png" alt="Aesthetic close up of a green leaf." /></span>
+								<!--Intro into my teaching disciplines-->
 								<p>I have inter-disiplinary experience that allows me to cater to a variety of different classroom environments. </p>
 								<p>With experience across all areas of TAS, my main subject specialisations is Textiles and Design with a minor in Industrial Technologies, focusing on both timber and metalwork.</p>
 								<p>As a creator myself I am deeply inspired by biophilic design with the idea that our environments and creations should connect us back to nature. I feel that designing and creating with nature in mind encourages sustainability, wellbeing, and mindfulness and as a future educator I would like to encourage my students to develop deeper understanding of how design can nurture harmony between people and the planet. Creating with ties to nature reminds us that innovation and sustainability can coexist ans that thoughtful design can both inspire and sustain life.</p>
-								<p>See below portfolio of my work completed throughout my time at university. </p>
-
+								<p>See below portfolio of my work completed throughout my time at university.</p>
+								<p>Click on one of the below images to see some of my work from that area.</p>
+								
+								<!--Grid which allows the user to click on an image and be taken down to that area of the page section where they are able to see the work from that discipline.-->
 								<div class="portfolio-grid">
 
 									<div class="portfolio-item">
 										<h3>TEXTILES</h3>
 										<a href="#textiles-section">
-											<img src="images/sewing_portfolio_sewing_machine.jpeg" alt="">
+											<img src="images/sewing_portfolio_sewing_machine.jpeg" alt="Aesthetic image of a table and vintage sewing machine.">
 										</a>
 									</div>
 
 									<div class="portfolio-item">
 										<h3>TIMBER</h3>
 										<a href="#timber-section">
-											<img src="images/knotted_timber.jpeg" alt="">
+											<img src="images/knotted_timber.jpeg" alt="Aesthetic close up image of weathered, knotted timber.">
 										</a>
 									</div>
 
 									<div class="portfolio-item">
 										<h3>METAL</h3>
 										<a href="#metal-section">
-											<img src="images/metal_grinding_image.jpeg" alt="">
+											<img src="images/metal_aesthetic.png" alt="Aesthetic image of an angel grinder grinding metal. Sparks.">
 										</a>
 									</div>
 
 									<div class="portfolio-item">
 										<h3>ELECTRO-MECHANICAL</h3>
 										<a href="#electro-section">
-											<img src="images/electro_image.jpeg" alt="">
+											<img src="images/electro_image.jpeg" alt="Aesthtic image of the inside of a computer.">
+										</a>
+									</div>
+
+									<div class="portfolio-item">
+										<h3>FOOD TECH</h3>
+										<a href="#food-section">
+											<img src="images/food_aesthetic.jpeg" alt="Aesthetic and colourful image of people preparing food.">
 										</a>
 									</div>
 
@@ -222,7 +264,7 @@
 							
 							<!--This is the main content for this page including a gallery of different discipline specific projects I have completed-->
 							
-							<!--This section focuses on my Textiles Projects-->
+							<!--This section focuses on my Textiles Projects and has images with descriptors of what the project is. -->
 								<section id="textiles-section">
 									<h2>Textiles and Design Gallery</h2>
 									<img src="images/textiles_portfolio_image.png" alt="close up image of textiles fibre and yarns. Hand dyed earthy colours.">
@@ -265,7 +307,9 @@
 										</div>
 									</div>
 								</section>
-								<!--This section focuses on my Timber Projects-->
+
+
+								<!--This section focuses on my Timber Projects and has images with descriptors of what the project is.-->
 								<section id="timber-section">
 									<h2>Industrial Timber Gallery</h2>
 									<img src="images/timber_portfolio_image.png" alt="close up image of aged timber. Cross sectional view of tree.">
@@ -289,7 +333,50 @@
 										</div>
 									</div>
 								</section>
-								<!--This section focuses on my Electro-Mechanical Projects-->
+
+								<!--This section focuses on my Metal Projects and has images with descriptors of what the project is.-->
+								<section id="metal-section">
+									<h2>Metal Gallery</h2>
+									<img src="images/metal_grinder_long.png" alt="Aesthetic image of a metal grinder and sparks.">
+									<p>Metalwork is a discipline I’ve recently begun exploring, and it has quickly become a rewarding part of my creative practice. I’m fascinated by how strength and precision can combine to produce designs that are both functional and expressive. Working with metal has challenged me to think critically about technique, accuracy, and design intent, while still leaving space for creativity and experimentation. As I continue to develop my skills, I’m excited to bring this learning into the classroom — encouraging students to approach metalwork with curiosity, persistence, and pride in craftsmanship.</p>
+									<div class="flex-container">
+										<div class="project-card">
+											<img src="images/soup_ladle.png" alt="cooper soup laddle with brass handle.">
+											<p>A cooper and brass soup laddle. All metals were annealed and then manupulated into shape using hand tools. </p>
+										</div>
+										<div class="project-card">
+											<img src="images/toolbox.png" alt="galvanised sheet metal tool box.">
+											<p> A sheet metal tool box which has uses a net pattern. Metal has been bend into shape and pop rivets to hold in place.</p>
+										</div>
+										<div class="project-card">
+											<img src="images/hacksaw.png" alt="light blue hacksaw with dark blue handle">
+											<p> Hacksaw which has been cut, annealed, welded and grinded. Ergonomic 3D printed handle to accompany it.</p>
+										</div>
+										<div class="project-card">
+											<img src="images/metal_earrings.png" alt="brass and silver organic earrings">
+											<p> Organic shaped brass and nickel silver earrings. Hand cut, embossed and shaped. </p>
+										</div>
+									</div>
+								</section>
+
+								<!--This section focuses on my Food Technology Projects and has images with descriptors of what the project is.-->
+								<section id="food-section">
+									<h2>Food Tech Gallery</h2>
+									<img src="images/food_spread_long.png" alt="table spread of colourful foods">
+									<p>I’ve always had a love for cooking and experimenting in the kitchen. I find joy in creating meals that bring people together and showcase creativity through flavour, presentation, and technique. Food Technology, although something I haven't specialised in, is an area I’m eager to explore further, as it combines practical skills with health, culture, and design. I’m passionate about continuing to develop my knowledge so I can inspire students to see food as both an essential life skill and a creative outlet.</p>
+									<div class="flex-container">
+										<div class="project-card">
+											<img src="images/confit_salmon.png" alt="white plate with salmon, brown rice and saute vegetables">
+											<p>A meso confit salmon with brown rice and saute vegetables. This plate was part of a flavour forcast challenge where we mixed traditional french cooking methods with an asian flavour profile.</p>
+										</div>
+										<div class="project-card">
+											<img src="images/ft-cooking.jpg" alt="colourful mexican flavoured poke bowl">
+											<p>A mexican inspired poke bowl with julienne carrots, cherry tomatos, avocado and corriender.</p>
+										</div>
+									</div>
+								</section>
+
+								<!--This section focuses on my Electro-Mechanical Projects and has images with descriptors of what the project is.-->
 								<section id="electro-section">
 									<h2>Electro-Mechanical Gallery</h2>
 									<img src="images/electro_gallery_image.png" alt="Aesthetic image of electical circuit.">
@@ -306,139 +393,152 @@
 								</section>
 							</article>
 
-							<!-- Resources -->
-								<article id="resources">
-									<h2 class="major">RESOURCES</h2>
-									<span class="image main"><img src="images/resources_image.png" alt="Aesthetic image of vintage books" /></span>
-									<div class="inner">
-										<p>Please see below downloadable teaching resources that follow the NESA Syllabus guildelines over a variety of TAS disciplines. </p>
-									
-										<!--This is the division to provide structure for the thumbnails and downloadable links for teaching resources-->
-										<div class="card-grid">
-											<!--Stage 4 tech mandatory resources-->
-											<article class="card">
-											<a href="documents/stage4_sewing_intro.pdf" target="_blank" rel="noopener">
-												<img src="images/stage4-tex-intro-thumbnail.jpg" alt="Stage 4 sewing intro thumbnail">
-											</a>
-											<div class="content">
-												<h3>Stage 4 Tech Mandatory - Introduction to Sewing Slides</h3>
-												<p>Year 7 Tech Mandatory student electronic work booklet including teacher master copy with answers.</p>
-											</div>
-											</article>
 
-											<!--Stage 4 tech mandatory resource on how to moodboard-->
-											<article class="card">
-												<a href="documents/stage4_moodboarding.pdf" target="_blank" rel="noopener">
-													<img src="images/stage4-moodboard-thumbnail.jpg" alt="Moodboarding thumbnail">
-												</a>
-												<div class="content">
-													<h3>Stage 4 Tech Mandatory - Intro to Pillow Project and Moodboarding</h3>
-													<p>Year 7 Tech Mandatory introduction into textiles unit, introduction of cushion project and how to moodboard.</p>
-												</div>
-											</article>
 
-											<!--Stage 4 tech mandatory resource on how to moodboard-->
-											<article class="card">
-												<a href="documents/pmi_exemplar_worksheet.pdf" target="_blank" rel="noopener">
-													<img src="images/pmi_worksheet_thumbnail.png" alt="PMI worksheet thumbnail">
-												</a>
-												<div class="content">
-													<h3>Stage 4&5 Technology PMI Exemplar & Worksheet</h3>
-													<p>Exemplar on planter pot and PMI worksheet for students to complete their own evaluation.</p>
-												</div>
-											</article>
+							<!------------ Resources ----------------->
 
-											<!--Stage 5 food tech slides on food trends-->
-											<article class="card">
-												<a href="documents/stage5_food_trends.pdf" target="_blank" rel="noopener">
-													<img src="images/stage5-food-trends-thumbnail.jpg" alt="Food trends thumbnail">
-												</a>
-												<div class="content">
-													<h3>Stage 5 Food Technology - Food Trends Slides</h3>
-													<p>Stage 5 Food Technology Food Trends Slides and Content.</p>
-												</div>
-											</article>
+							<article id="resources">
+							<h2 class="major">RESOURCES</h2>
+							<span class="image main"><img src="images/resources_image.png" alt="Aesthetic image of vintage books" /></span>
 
-											<!--Stage 5 food tech slides on food safety and hygiene-->
-											<article class="card">
-												<a href="documents/food_safety_and_hygiene_slides.pdf" target="_blank" rel="noopener">
-													<img src="images/stage5-food-safety-hygiene-thumbnail.jpg" alt="Food safety slideshow thumbnail">
-												</a>
-												<div class="content">
-													<h3>Stage 5 Food Technology - Food Safety & Hygiene</h3>
-													<p>Stage 5 Food Technology Food Safety and Hygiene Slides and Teacher Content.</p>
-												</div>
-											</article>
+							<div class="inner">
+								<p>Please see below downloadable teaching resources that follow the NESA Syllabus guidelines over a variety of TAS disciplines.</p>
 
-											<!--Stage 5 food tech worksheet on food safety and hygiene-->
-											<article class="card">
-												<a href="documents/safety_and_hygiene_worksheet.pdf" target="_blank" rel="noopener">
-													<img src="images/stage5-food-safety-worksheet.jpg" alt="Food safety worksheet thumbnail">
-												</a>
-												<div class="content">
-													<h3>Stage 5 Food Technology - Food Safety and Hygiene Student Worksheet</h3>
-													<p>Stage 5 Food Technology Food Safety and Hygiene Student Worksheet to accompany the safety aqnd hygiene slides and teacher content.</p>
-												</div>
-											</article>
+								<!--This is the division to provide structure for the thumbnails and downloadable links for teaching resources-->
 
-											<!--Stage 5 textiles and design fabric identification card game-->
-											<article class="card">
-												<a href="documents/Fabric Identification Game.pdf" target="_blank" rel="noopener">
-													<img src="images/stage5-weaving-game-thumbnail.jpg" alt="thumbnail for stage 5 textiles and design fabric identification card game">
-												</a>
-												<div class="content">
-													<h3>Stage 5 Textiles and Design - Fabric Identification Card Game</h3>
-													<p>Stage 5 Textiles card game for fabric identification of types of weave structure and knitted fabrics. Can be played as either snap or a memory game.</p>
-												</div>
-											</article>
-
-											<!--Stage 6 hospitality hsc revision worksheet-->
-											<article class="card">
-												<a href="documents/hschospo_revision.pdf" target="_blank" rel="noopener">
-													<img src="images/stage6-hospo-hsc-revision-thumbnail.jpg" alt="thumbnail for yr12 hospo hsc revision worksheet">
-												</a>
-												<div class="content">
-													<h3>Stage 6 Hospitality - Revision Worksheet</h3>
-													<p>Year 12 Hospitality revision worksheet on the roles and responsibilities of different food and beverage positions, and the characteristics of non-alcoholic beverages.</p>
-													</div>
-											</article>
-
-										</div>
+								<!-- Resource list (flexbox) - card-grid was not working-->
+								<!--Stage 4 tech mandatory resources-->
+								<div class="resource-list">
+									<div class="resource">
+										<a href="documents/stage4_sewing_intro.pdf" target="_blank" rel="noopener">
+										<img src="images/stage4-tex-intro-thumbnail.jpg" alt="Stage 4 sewing intro thumbnail">
+										</a>
+										<h3>Stage 4 Tech Mandatory - Introduction to Sewing Slides</h3>
+										<p>Year 7 Tech Mandatory student electronic work booklet including teacher master copy with answers.</p>
 									</div>
-								</article>
 
-						<!-- Contact -->
+								<!--Stage 4 tech mandatory resource on how to moodboard-->
+									<div class="resource">
+										<a href="documents/stage4_moodboarding.pdf" target="_blank" rel="noopener">
+										<img src="images/stage4-moodboard-thumbnail.jpg" alt="Moodboarding thumbnail">
+										</a>
+										<h3>Stage 4 Tech Mandatory - Intro to Pillow Project and Moodboarding</h3>
+										<p>Year 7 Tech Mandatory introduction into textiles unit, introduction of cushion project and how to moodboard.</p>
+									</div>
+
+									<!--Stage 4 tech mandatory resource on how to moodboard-->
+										<div class="resource">
+											<a href="documents/pmi_exemplar_worksheet.pdf" target="_blank" rel="noopener">
+												<img src="images/pmi_worksheet_thumbnail.png" alt="PMI worksheet thumbnail">
+											</a>
+											<h3>Stage 4&5 Technology PMI Exemplar & Worksheet</h3>
+											<p>Exemplar on planter pot and PMI worksheet for students to complete their own evaluation.</p>
+										</div>
+
+										<!--Stage 5 food tech slides on food trends-->
+										<div class="resource">
+											<a href="documents/stage5_food_trends.pdf" target="_blank" rel="noopener">
+												<img src="images/stage5-food-trends-thumbnail.jpg" alt="Food trends thumbnail">
+											</a>
+											<h3>Stage 5 Food Technology - Food Trends Slides</h3>
+											<p>Stage 5 Food Technology Food Trends Slides and Content.</p>
+										</div>
+
+										<!--Stage 5 food tech slides on food safety and hygiene-->
+										<div class="resource">
+											<a href="documents/food_safety_and_hygiene_slides.pdf" target="_blank" rel="noopener">
+												<img src="images/stage5-food-safety-hygiene-thumbnail.jpg" alt="Food safety slideshow thumbnail">
+											</a>
+											<h3>Stage 5 Food Technology - Food Safety & Hygiene</h3>
+											<p>Stage 5 Food Technology Food Safety and Hygiene Slides and Teacher Content.</p>
+										</div>
+
+										<!--Stage 5 food tech worksheet on food safety and hygiene-->
+										<div class="resource">
+											<a href="documents/safety_and_hygiene_worksheet.pdf" target="_blank" rel="noopener">
+												<img src="images/stage5-food-safety-worksheet.jpg" alt="Food safety worksheet thumbnail">
+											</a>
+											<h3>Stage 5 Food Technology - Food Safety and Hygiene Student Worksheet</h3>
+											<p>Stage 5 Food Technology Food Safety and Hygiene Student Worksheet to accompany the safety aqnd hygiene slides and teacher content.</p>
+										</div>
+
+										<!--Stage 5 textiles and design fabric identification card game-->
+										<div class="resource">
+											<a href="documents/Fabric Identification Game.pdf" target="_blank" rel="noopener">
+												<img src="images/stage5-weaving-game-thumbnail.jpg" alt="thumbnail for stage 5 textiles and design fabric identification card game">
+											</a>
+											<h3>Stage 5 Textiles and Design - Fabric Identification Card Game</h3>
+											<p>Stage 5 Textiles card game for fabric identification of types of weave structure and knitted fabrics. Can be played as either snap or a memory game.</p>
+										</div>
+
+										<!--Stage 6 hospitality hsc revision worksheet-->
+										<div class="resource">
+											<a href="documents/hschospo_revision.pdf" target="_blank" rel="noopener">
+												<img src="images/stage6-hospo-hsc-revision-thumbnail.jpg" alt="thumbnail for yr12 hospo hsc revision worksheet">
+											</a>
+											<h3>Stage 6 Hospitality - Revision Worksheet</h3>
+											<p>Year 12 Hospitality revision worksheet on the roles and responsibilities of different food and beverage positions, and the characteristics of non-alcoholic beverages.</p>
+										</div>
+									
+								</div>
+							</div>
+							</article>
+
+				
+
+
+						<!------------- Contact ---------------->
+						<!-- Contact Form which users are directed to if they click in the 'contact' button in nav or if they click the 'subscribe' button in the JavaScript popup.-->
 							<article id="contact">
 								<h2 class="major">CONTACT ME</h2>
-								<form method="post" action="#">
+								<form id="contact-form" action="https://formsubmit.co/a0ec1ad9cb1f8a5126e09feee2161fe3" method="post" autocomplete="on">
 									<div class="fields">
+
+										<!-- Name field. Prompting users to input their name -->
 										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<label for="name">Full Name</label>
+											<input id="name" name="name" type="text" placeholder="John Smith" required minlength="2" autocomplete="name">
 										</div>
+
+										<!-- Email field. Prompting users to input their email address so i can contact them. -->
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input id="email" name="email" type="email" placeholder="yourdetails@example.com" required autocomplete="email">
 										</div>
+
+										<!-- Subscribe checkbox. A tick the box where users filling in the contact form can either subscribe for monthly updates or just send a message/ enquire for a reply. -->
+										<div class="field">
+											<input type="checkbox" id="subscribe" name="subscribe" value="Yes, please subscribe me!">
+											<label for="subscribe">Subscribe me! I would like to receive monthly updates and teaching resources.</label>
+										</div>
+
+
+										<!-- Message field. Text box where individuals are able to write their message/ enquire -->
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<textarea id="message" name="message" placeholder="How can I help?" rows="4" required minlength="8"></textarea>
 										</div>
 									</div>
+
+									<!--Button allowing users to either submit the form of reset and start again-->
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><button type="submit" class="button primary">Send Message</button></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
+
+								<!-- Thank You Popup. Acknowledgement of the form being submitted.
+								Linked to thankyou.js and will either thank user for subscribing or let them know we will be in touch shortly.-->
+								<div id="thankYouPopup" class="popup">
+								<div class="popup-content">
+									<button id="closeThankYou" class="close-btn">&times;</button>
+									<h3>Thank You!</h3>
+									<p id="popupMessage">Thank you for your message. I’ll get back to you soon!</p>
+								</div>
+								</div>
 							</article>
 
-						<!-- Elements -->
+						<!----------- Elements -------------->
 							<article id="elements">
 								<h2 class="major">Elements</h2>
 
@@ -682,7 +782,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 					</div>
 
-				<!-- Footer -->
+				<!------------- Footer ---------------->
 					<footer id="footer">
 						<p class="copyright">&copy; Lauren McCool. All rights reserved</p>
 					</footer>
@@ -692,12 +792,15 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- BG -->
 			<div id="bg"></div>
 
-		<!-- Scripts -->
+		<!------------ Scripts ------------>
+		<!--Linking JavaScript to HTML content-->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/quote.js"></script>
+			<script src="assets/js/popup.js"></script>
+			<script src="assets/js/thankyou.js"></script>
 	</body>
 </html>
