@@ -1846,25 +1846,17 @@ input, select, textarea {
 			padding: 1rem;
 			box-sizing: border-box;
 			text-align: left;
-			flex: 1 1 calc(50% - 1.5rem); /* default: two columns */
+			flex: 1 1 calc(50% - 1.5rem); /* always 2 columns */
 			max-width: calc(50% - 1.5rem);
 			transition: transform 0.25s ease, box-shadow 0.25s ease;
 		}
 
-		/* Responsive: three columns on wide screens */
-		@media (min-width: 1100px) {
-		.resource {
-			flex: 1 1 calc(33.333% - 1.5rem);
-			max-width: calc(33.333% - 1.5rem);
-		}
-		}
-
 		/* One column on small screens */
 		@media (max-width: 700px) {
-		.resource {
-			flex: 1 1 100%;
-			max-width: 100%;
-		}
+			.resource {
+				flex: 1 1 100%;
+				max-width: 100%;
+			}
 		}
 
 		/* Image inside card */
