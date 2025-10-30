@@ -1120,6 +1120,21 @@ input, select, textarea {
 		z-index: 1;
 	}
 
+	#bg,
+	#wrapper,
+	#main {
+		transform: none !important;
+		-webkit-transform: none !important;
+	}
+
+	html {
+			font-size: 100% !important;
+	}
+
+	body {
+			transform: none !important;
+	}
+
 		#bg:before, #bg:after {
 			content: '';
 			display: block;
